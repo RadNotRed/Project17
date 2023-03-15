@@ -1,0 +1,29 @@
+Main:
+Create a 4x4 integer array named "square"
+Create a Scanner object named "scanner" to read user input
+Loop through each row and column of the square array
+For each element, prompt the user to enter an integer and read it using the scanner
+Store the integer in the corresponding element of the square array
+Create a Server object named "server" and pass the square array as an argument
+Call the isMagicSquare() method of the server object and store the result in a boolean variable named "isMagic"
+If isMagic is true, print "The square is a magic square." Otherwise, print "The square is not a magic square."
+
+Server:
+Create an integer constant named "MAGIC_SUM" with a value of 34
+Create an integer 2D array named "square"
+Create a constructor that takes a square array as an argument and initializes the instance variable
+Create a method named "isMagicSquare()" that takes no arguments and returns a boolean
+Inside isMagicSquare(), call rowsAreEqual(), columnsAreEqual(), and diagonalsAreEqual()
+If all three methods return true, return true from isMagicSquare(). Otherwise, return false.
+Create a method named "rowsAreEqual()" that takes no arguments and returns a boolean
+Loop through each row of the square array and calculate the sum of the integers in that row
+If the sum is not equal to MAGIC_SUM, return false. Otherwise, continue to the next row.
+If all rows have been checked and none returned false, return true from rowsAreEqual().
+Create a method named "columnsAreEqual()" that takes no arguments and returns a boolean
+Loop through each column of the square array and calculate the sum of the integers in that column
+If the sum is not equal to MAGIC_SUM, return false. Otherwise, continue to the next column.
+If all columns have been checked and none returned false, return true from columnsAreEqual().
+Create a method named "diagonalsAreEqual()" that takes no arguments and returns a boolean
+Calculate the sum of the integers in the diagonal from top-left to bottom-right
+Calculate the sum of the integers in the diagonal from top-right to bottom-left
+If either sum is not equal to MAGIC_SUM, return false. Otherwise, return true from diagonalsAreEqual().
